@@ -1,24 +1,32 @@
+/* ===========================================================
+   FRAME — цветовая палитра и стили
+   Палитра: #0D1D25, #104C64, #C6C6D0, #D59D80, #C0754D, #B6410F
+   =========================================================== */
+
 :root {
-  --dark: #0D1D25;
-  --teal: #104C64;
-  --beige: #C6C6D0;
-  --peach: #D59D80;
-  --terracotta: #C0754D;
-  --rust: #B6410F;
-  --primary: #104C64;
-  --primary-dark: #0D1D25;
-  --accent: #D59D80;
-  --accent-dark: #C0754D;
-  --text: #2A1F1A;
-  --text-muted: #6B5E57;
-  --bg: #FBF9F6;
-  --bg-soft: #F3EFE9;
-  --bg-warm: #F7F0E8;
-  --border: #E4DDD4;
-  --white: #FFFFFF;
-  --radius: 14px;
-  --shadow: 0 4px 20px rgba(42,31,26,0.06);
-  --shadow-lg: 0 12px 36px rgba(42,31,26,0.09);
+  /* Основная палитра */
+  --dark:        #0D1D25;   /* самый тёмный */
+  --teal:        #104C64;   /* основной сине-зелёный */
+  --beige:       #C6C6D0;   /* светлый нейтральный */
+  --peach:       #D59D80;   /* персиковый акцент */
+  --terracotta:  #C0754D;   /* терракота */
+  --rust:        #B6410F;   /* глубокий ржавый */
+
+  /* Семантические переменные */
+  --primary:       #104C64;
+  --primary-dark:  #0D1D25;
+  --accent:        #D59D80;
+  --accent-dark:   #C0754D;
+  --text:          #2A1F1A;
+  --text-muted:    #6B5E57;
+  --bg:            #FBF9F6;
+  --bg-soft:       #F3EFE9;
+  --bg-warm:       #F7F0E8;
+  --border:        #E4DDD4;
+  --white:         #FFFFFF;
+  --radius:        14px;
+  --shadow:        0 4px 20px rgba(42, 31, 26, 0.06);
+  --shadow-lg:     0 12px 36px rgba(42, 31, 26, 0.09);
 }
 
 * {
@@ -80,7 +88,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(251,249,246,0.92);
+  background: rgba(251, 249, 246, 0.92);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border);
 }
@@ -139,7 +147,7 @@ nav a:hover {
 .btn-primary:hover {
   background: var(--primary-dark);
   transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(16,76,100,0.28);
+  box-shadow: 0 6px 20px rgba(16, 76, 100, 0.28);
 }
 
 .btn-outline {
@@ -149,7 +157,7 @@ nav a:hover {
 }
 
 .btn-outline:hover {
-  background: rgba(16,76,100,0.06);
+  background: rgba(16, 76, 100, 0.06);
 }
 
 .btn-lg {
@@ -259,7 +267,7 @@ nav a:hover {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 30% 20%, rgba(213,157,128,0.25), transparent 50%);
+  background: radial-gradient(circle at 30% 20%, rgba(213, 157, 128, 0.25), transparent 50%);
 }
 
 .hero-visual-inner {
@@ -280,7 +288,7 @@ nav a:hover {
   justify-content: center;
   color: white;
   font-size: 2rem;
-  box-shadow: 0 8px 24px rgba(16,76,100,0.25);
+  box-shadow: 0 8px 24px rgba(16, 76, 100, 0.25);
 }
 
 section {
@@ -374,7 +382,7 @@ section {
 .adv-icon {
   width: 46px;
   height: 46px;
-  background: linear-gradient(135deg, rgba(213,157,128,0.2), rgba(16,76,100,0.1));
+  background: linear-gradient(135deg, rgba(213, 157, 128, 0.2), rgba(16, 76, 100, 0.1));
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -430,7 +438,7 @@ section {
   display: flex;
   align-items: center;
   gap: 14px;
-  background: rgba(255,255,255,0.08);
+  background: rgba(255, 255, 255, 0.08);
   padding: 14px 18px;
   border-radius: 12px;
 }
@@ -616,7 +624,7 @@ section {
   font-size: 1.2rem;
   font-weight: 700;
   margin: 0 auto 14px;
-  box-shadow: 0 4px 14px rgba(16,76,100,0.28);
+  box-shadow: 0 4px 14px rgba(16, 76, 100, 0.28);
 }
 
 .step h3 {
@@ -751,7 +759,7 @@ section {
 .contact-item .icon {
   width: 40px;
   height: 40px;
-  background: linear-gradient(135deg, rgba(213,157,128,0.25), rgba(16,76,100,0.12));
+  background: linear-gradient(135deg, rgba(213, 157, 128, 0.25), rgba(16, 76, 100, 0.12));
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -804,7 +812,7 @@ section {
 /* Footer */
 footer {
   background: var(--primary-dark);
-  color: rgba(255,255,255,0.85);
+  color: rgba(255, 255, 255, 0.85);
   padding: 48px 0 32px;
 }
 
@@ -847,7 +855,7 @@ footer {
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(255,255,255,0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 24px;
   display: flex;
   justify-content: space-between;
