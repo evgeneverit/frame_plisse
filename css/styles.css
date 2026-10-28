@@ -321,6 +321,7 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 22px;
+  align-items: stretch;
 }
 
 .product-card {
@@ -329,6 +330,9 @@ section {
   border-radius: var(--radius);
   padding: 30px 26px;
   transition: all 0.25s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .product-card:hover {
@@ -353,6 +357,12 @@ section {
   font-size: 0.93rem;
   color: var(--text-muted);
   margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.product-card .btn {
+  margin-top: auto;
+  width: 100%;
 }
 
 /* Advantages */
