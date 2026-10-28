@@ -17,6 +17,8 @@
   --primary-dark:  #0D1D25;
   --accent:        #D59D80;
   --accent-dark:   #C0754D;
+  --cta:           #DF6C11;   /* яркий оранжевый для кнопок */
+  --cta-hover:     #C55A0A;
   --text:          #2A1F1A;
   --text-muted:    #6B5E57;
   --bg:            #FBF9F6;
@@ -140,14 +142,14 @@ nav a:hover {
 }
 
 .btn-primary {
-  background: var(--primary);
+  background: var(--cta);
   color: white;
 }
 
 .btn-primary:hover {
-  background: var(--primary-dark);
+  background: var(--cta-hover);
   transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(16, 76, 100, 0.28);
+  box-shadow: 0 6px 20px rgba(223, 108, 17, 0.35);
 }
 
 .btn-outline {
