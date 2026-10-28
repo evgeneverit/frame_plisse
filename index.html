@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FRAME — перегородки, шторы и москитные сетки плиссе</title>
+  <meta name="description" content="Раздвижные перегородки, шторы и москитные сетки плиссе от производителя FRAME. Бесплатный замер по Самаре. Цена финальная, доставка по России.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --dark: #0D1D25;
+      --teal: #104C64;
+      --beige: #C6C6D0;
+      --peach: #D59D80;
+      --terracotta: #C0754D;
+      --rust: #B6410F;
+      --primary: #104C64;
+      --primary-dark: #0D1D25;
+      --accent: #D59D80;
+      --accent-dark: #C0754D;
+      --text: #2A1F1A;
+      --text-muted: #6B5E57;
+      --bg: #FBF9F6;
+      --bg-soft: #F3EFE9;
+      --bg-warm: #F7F0E8;
+      --border: #E4DDD4;
+      --white: #FFFFFF;
+      --radius: 14px;
+      --shadow: 0 4px 20px rgba(42,31,26,0.06);
+      --shadow-lg: 0 12px 36px rgba(42,31,26,0.09);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: inherit; text-decoration: none; }
+    .container { width: 100%; max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+
+    /* Promo banner */
+    .promo-banner {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+      color: white; padding: 14px 0; text-align: center; font-size: 0.95rem; font-weight: 500;
+    }
+    .promo-banner strong { color: var(--peach); }
+    .promo-banner span { opacity: 0.9; }
+
+    /* Header */
+    header {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(251,249,246,0.92);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+    }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .logo { font-weight: 700; font-size: 1.3rem; color: var(--primary-dark); letter-spacing: -0.03em; }
+    nav { display: flex; gap: 28px; align-items: center; }
+    nav a { font-size: 0.9rem; font-weight: 500; color: var(--text-muted); transition: color 0.2s; }
+    nav a:hover { color: var(--primary); }
+
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      padding: 12px 24px; font-size: 0.95rem; font-weight: 600;
+      border-radius: 10px; border: none; cursor: pointer; transition: all 0.2s; font-family: inherit;
+    }
+    .btn-primary { background: var(--primary); color: white; }
+    .btn-primary:hover { background: var(--primary-dark); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(16,76,100,0.28); }
+    .btn-outline { background: transparent; color: var(--primary); border: 1.5px solid var(--primary); }
+    .btn-outline:hover { background: rgba(16,76,100,0.06); }
+    .btn-lg { padding: 16px 32px; font-size: 1.05rem; }
+    .btn-whatsapp { background: #25D366; color: white; }
+    .btn-whatsapp:hover { background: #1da851; }
+
+    /* Hero */
+    .hero { padding: 72px 0 56px; background: linear-gradient(180deg, var(--bg-warm) 0%, var(--bg) 100%); }
+    .hero-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 48px; align-items: center; }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 6px; background: white;
+      border: 1px solid var(--border); padding: 6px 14px; border-radius: 100px;
+      font-size: 0.8rem; font-weight: 500; color: var(--primary); margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 4.5vw, 2.9rem); font-weight: 700; line-height: 1.15;
+      letter-spacing: -0.03em; margin-bottom: 18px; color: var(--primary-dark);
+    }
+    .hero h1 em { font-style: normal; color: var(--terracotta); }
+    .hero-lead { font-size: 1.12rem; color: var(--text-muted); margin-bottom: 28px; max-width: 480px; }
+    .hero-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 36px; }
+    .hero-stats { display: flex; gap: 28px; flex-wrap: wrap; }
+    .stat { display: flex; flex-direction: column; }
+    .stat-value { font-size: 1.4rem; font-weight: 700; color: var(--primary); }
+    .stat-label { font-size: 0.82rem; color: var(--text-muted); }
+    .hero-visual {
+      background: linear-gradient(145deg, #EDE6DC 0%, #E0D5C8 100%);
+      border-radius: 24px; box-shadow: var(--shadow-lg); aspect-ratio: 4/5;
+      display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;
+    }
+    .hero-visual::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(circle at 30% 20%, rgba(213,157,128,0.25), transparent 50%);
+    }
+    .hero-visual-inner { text-align: center; padding: 40px; position: relative; z-index: 1; }
+    .hero-visual-icon {
+      width: 80px; height: 80px; margin: 0 auto 18px; background: var(--primary);
+      border-radius: 20px; display: flex; align-items: center; justify-content: center;
+      color: white; font-size: 2rem; box-shadow: 0 8px 24px rgba(16,76,100,0.25);
+    }
+
+    section { padding: 80px 0; }
+    .section-header { text-align: center; max-width: 580px; margin: 0 auto 48px; }
+    .section-header h2 {
+      font-size: clamp(1.55rem, 3vw, 2.15rem); font-weight: 700;
+      letter-spacing: -0.02em; margin-bottom: 12px; color: var(--primary-dark);
+    }
+    .section-header p { color: var(--text-muted); font-size: 1.05rem; }
+
+    /* Products */
+    .products-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+    .product-card {
+      background: white; border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 30px 26px; transition: all 0.25s;
+    }
+    .product-card:hover { border-color: var(--accent); box-shadow: var(--shadow); transform: translateY(-4px); }
+    .product-card .emoji { font-size: 2.1rem; margin-bottom: 14px; }
+    .product-card h3 { font-size: 1.15rem; font-weight: 600; margin-bottom: 10px; color: var(--primary-dark); }
+    .product-card p { font-size: 0.93rem; color: var(--text-muted); margin-bottom: 20px; }
+
+    /* Advantages */
+    .advantages { background: var(--bg-soft); }
+    .adv-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .adv-card {
+      background: white; border-radius: var(--radius); padding: 26px;
+      box-shadow: var(--shadow); transition: transform 0.2s, box-shadow 0.2s; border: 1px solid transparent;
+    }
+    .adv-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); border-color: var(--border); }
+    .adv-icon {
+      width: 46px; height: 46px;
+      background: linear-gradient(135deg, rgba(213,157,128,0.2), rgba(16,76,100,0.1));
+      border-radius: 12px; display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem; margin-bottom: 14px;
+    }
+    .adv-card h3 { font-size: 1.05rem; font-weight: 600; margin-bottom: 8px; color: var(--primary-dark); }
+    .adv-card p { font-size: 0.92rem; color: var(--text-muted); }
+
+    /* Service highlight */
+    .service-highlight {
+      background: linear-gradient(135deg, #2A1F1A 0%, #3D2E26 100%);
+      border-radius: 20px; padding: 36px 40px; display: grid; grid-template-columns: 1fr 1fr;
+      gap: 32px; align-items: center; margin-top: 48px; color: white;
+    }
+    .service-highlight h3 { font-size: 1.35rem; font-weight: 700; margin-bottom: 10px; }
+    .service-highlight p { font-size: 0.95rem; opacity: 0.85; margin-bottom: 0; }
+    .service-items { display: flex; flex-direction: column; gap: 14px; }
+    .service-item {
+      display: flex; align-items: center; gap: 14px;
+      background: rgba(255,255,255,0.08); padding: 14px 18px; border-radius: 12px;
+    }
+    .service-item .icon {
+      width: 40px; height: 40px; background: var(--accent); border-radius: 10px;
+      display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0;
+    }
+    .service-item strong { display: block; font-size: 0.95rem; }
+    .service-item span { font-size: 0.85rem; opacity: 0.75; }
+
+    /* Features */
+    .features-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+    .features-list { list-style: none; }
+    .features-list li { display: flex; gap: 14px; margin-bottom: 22px; }
+    .features-list .check {
+      flex-shrink: 0; width: 28px; height: 28px; background: var(--primary); color: white;
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-size: 0.85rem; font-weight: 700;
+    }
+    .features-list h4 { font-size: 1.02rem; font-weight: 600; margin-bottom: 4px; color: var(--primary-dark); }
+    .features-list p { font-size: 0.9rem; color: var(--text-muted); }
+    .features-visual {
+      background: var(--bg-warm); border-radius: 22px; padding: 40px; text-align: center; border: 1px solid var(--border);
+    }
+    .size-badge {
+      display: inline-block; background: white; border: 1px solid var(--border);
+      padding: 8px 16px; border-radius: 8px; font-weight: 600; font-size: 0.9rem;
+      margin: 8px; color: var(--primary-dark);
+    }
+
+    /* Applications */
+    .apps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .app-card {
+      background: white; border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 22px 18px; text-align: center; transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .app-card:hover { border-color: var(--accent); box-shadow: var(--shadow); }
+    .app-card .emoji { font-size: 1.9rem; margin-bottom: 10px; }
+    .app-card h3 { font-size: 0.93rem; font-weight: 600; color: var(--primary-dark); }
+
+    /* Gallery */
+    .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .gallery-item {
+      aspect-ratio: 4/3; background: var(--bg-warm); border-radius: var(--radius);
+      display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 8px;
+      border: 1px solid var(--border); color: var(--text-muted); font-size: 0.9rem; font-weight: 500;
+    }
+    .gallery-item span { font-size: 1.9rem; }
+
+    /* Process */
+    .process-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; position: relative; }
+    .process-steps::before {
+      content: ''; position: absolute; top: 28px; left: 10%; right: 10%; height: 2px; background: var(--border); z-index: 0;
+    }
+    .step { text-align: center; position: relative; z-index: 1; }
+    .step-num {
+      width: 56px; height: 56px; background: var(--primary); color: white; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; font-size: 1.2rem; font-weight: 700;
+      margin: 0 auto 14px; box-shadow: 0 4px 14px rgba(16,76,100,0.28);
+    }
+    .step h3 { font-size: 1rem; font-weight: 600; margin-bottom: 6px; color: var(--primary-dark); }
+    .step p { font-size: 0.84rem; color: var(--text-muted); }
+
+    /* Calculator */
+    .calc-section { background: var(--bg-soft); }
+    .calc-card {
+      background: white; border-radius: 20px; box-shadow: var(--shadow-lg);
+      padding: 40px; max-width: 640px; margin: 0 auto; border: 1px solid var(--border);
+    }
+    .calc-card h3 { font-size: 1.35rem; font-weight: 700; margin-bottom: 8px; text-align: center; color: var(--primary-dark); }
+    .calc-card > p { text-align: center; color: var(--text-muted); margin-bottom: 28px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 14px; }
+    .form-group { margin-bottom: 14px; }
+    .form-group label { display: block; font-size: 0.84rem; font-weight: 500; margin-bottom: 6px; color: var(--text-muted); }
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%; padding: 12px 14px; border: 1.5px solid var(--border); border-radius: 10px;
+      font-size: 1rem; font-family: inherit; transition: border-color 0.2s; background: white; color: var(--text);
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--primary); }
+    .form-group textarea { resize: vertical; min-height: 80px; }
+    .form-note { font-size: 0.8rem; color: var(--text-muted); text-align: center; margin-top: 14px; }
+    .form-success { display: none; text-align: center; padding: 40px 20px; }
+    .form-success.show { display: block; }
+    .form-success .icon { font-size: 3rem; margin-bottom: 14px; }
+
+    /* Contacts */
+    .contacts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+    .contact-info h3 { font-size: 1.25rem; font-weight: 700; margin-bottom: 20px; color: var(--primary-dark); }
+    .contact-item { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 18px; }
+    .contact-item .icon {
+      width: 40px; height: 40px;
+      background: linear-gradient(135deg, rgba(213,157,128,0.25), rgba(16,76,100,0.12));
+      border-radius: 10px; display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; font-size: 1.1rem;
+    }
+    .contact-item strong { display: block; font-size: 0.95rem; color: var(--primary-dark); }
+    .contact-item span, .contact-item a { font-size: 0.9rem; color: var(--text-muted); }
+    .contact-item a:hover { color: var(--primary); }
+    .contact-cta {
+      background: var(--bg-warm); border-radius: var(--radius); padding: 32px;
+      text-align: center; border: 1px solid var(--border);
+    }
+    .contact-cta h3 { font-size: 1.2rem; margin-bottom: 12px; color: var(--primary-dark); }
+    .contact-cta p { color: var(--text-muted); margin-bottom: 22px; font-size: 0.95rem; }
+    .contact-cta .btn { width: 100%; margin-bottom: 12px; }
+
+    /* Footer */
+    footer { background: var(--primary-dark); color: rgba(255,255,255,0.85); padding: 48px 0 32px; }
+    .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+    .footer-brand .logo { color: white; margin-bottom: 12px; display: block; }
+    .footer-brand p { font-size: 0.9rem; opacity: 0.75; max-width: 280px; }
+    .footer-col h4 { font-size: 0.9rem; font-weight: 600; margin-bottom: 16px; color: white; }
+    .footer-col a { display: block; font-size: 0.9rem; opacity: 0.7; margin-bottom: 10px; transition: opacity 0.2s; }
+    .footer-col a:hover { opacity: 1; }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px;
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;
+      font-size: 0.85rem; opacity: 0.65;
+    }
+
+    .mobile-toggle { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--text); }
+
+    @media (max-width: 900px) {
+      .hero-grid, .features-grid, .contacts-grid, .products-grid, .service-highlight { grid-template-columns: 1fr; }
+      .adv-grid { grid-template-columns: 1fr 1fr; }
+      .apps-grid { grid-template-columns: 1fr 1fr; }
+      .gallery-grid { grid-template-columns: 1fr 1fr; }
+      .process-steps { grid-template-columns: 1fr 1fr; }
+      .process-steps::before { display: none; }
+      .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+      nav { display: none; }
+      .mobile-toggle { display: block; }
+      .hero { padding: 48px 0 40px; }
+      section { padding: 56px 0; }
+      .service-highlight { padding: 28px 24px; }
+    }
+    @media (max-width: 560px) {
+      .adv-grid, .apps-grid, .gallery-grid, .process-steps, .form-row { grid-template-columns: 1fr; }
+      .hero-cta { flex-direction: column; }
+      .hero-cta .btn { width: 100%; }
+      .calc-card { padding: 24px 20px; }
+      .promo-banner { font-size: 0.85rem; padding: 12px 16px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Promo banner -->
+  <div class="promo-banner">
+    <div class="container">
+      <strong>Бесплатный замер по Самаре</strong>
+      <span> · Монтаж возможен (платный) · Доставка по всей России</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-inner">
+      <a href="#" class="logo">FRAME</a>
+      <nav>
+        <a href="#products">Продукция</a>
+        <a href="#advantages">Преимущества</a>
+        <a href="#features">О системе</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#calc">Рассчитать</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <a href="#calc" class="btn btn-primary">Рассчитать цену</a>
+      <button class="mobile-toggle" aria-label="Меню">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="hero-badge">✦ Производство в г. Самара</div>
+        <h1>Перегородки, шторы и москитные сетки <em>плиссе</em></h1>
+        <p class="hero-lead">
+          Стильные системы плиссе с гарантией — цена финальная, без скрытых доплат. Изготовим под ваш проём, установим аккуратно, доставим по РФ.
+        </p>
+        <div class="hero-cta">
+          <a href="#calc" class="btn btn-primary btn-lg">Рассчитать стоимость</a>
+          <a href="https://wa.me/79874547720" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-value">до 5×3 м</span>
+            <span class="stat-label">максимальный размер</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">5–7 дней</span>
+            <span class="stat-label">срок изготовления</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">от 3 000 ₽</span>
+            <span class="stat-label">готовые модели</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-visual-inner">
+          <div class="hero-visual-icon">🏠</div>
+          <p style="font-weight:600;color:var(--primary-dark);margin-bottom:8px;">Системы плиссе</p>
+          <p style="color:var(--text-muted);">В открытом виде — стопка 5–8 см.<br>Полностью освобождает проём.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products">
+    <div class="container">
+      <div class="section-header">
+        <h2>Три решения на одной технологии</h2>
+        <p>Одна система — три задачи. Выбирайте то, что нужно именно вам</p>
+      </div>
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="emoji">🚪</div>
+          <h3>Перегородки плиссе</h3>
+          <p>Идеально подходят для зонирования комнат, организации пространства в любых помещениях и обустройства гардеробных — они гибко адаптируются под разные задачи и сохраняют простор.</p>
+          <a href="#calc" class="btn btn-outline" style="width:100%;">Рассчитать</a>
+        </div>
+        <div class="product-card">
+          <div class="emoji">🪟</div>
+          <h3>Шторы плиссе</h3>
+          <p>Для окон и панорамных проёмов. Полупрозрачные ткани и блэкаут. Регулируют свет и сохраняют приватность.</p>
+          <a href="#calc" class="btn btn-outline" style="width:100%;">Рассчитать</a>
+        </div>
+        <div class="product-card">
+          <div class="emoji">🦟</div>
+          <h3>Москитные сетки плиссе</h3>
+          <p>Компактная защита от насекомых для окон, дверей, террас и беседок. Полотно складывается в тонкую стопку — не мешает проходу и почти не занимает места.</p>
+          <a href="#calc" class="btn btn-outline" style="width:100%;">Рассчитать</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Advantages -->
+  <section class="advantages" id="advantages">
+    <div class="container">
+      <div class="section-header">
+        <h2>Почему плиссе, а не обычные решения</h2>
+        <p>Современная система, которая экономит место и выглядит стильно</p>
+      </div>
+      <div class="adv-grid">
+        <div class="adv-card">
+          <div class="adv-icon">📦</div>
+          <h3>Почти не занимает места</h3>
+          <p>Компактность до миллиметра: в сложенном виде полотно — всего 5–8 см. Тонкий профиль 25 мм, не бросается в глаза. Идеально для квартир, домов и офиса — ничего не мешает, всё на своём месте.</p>
+        </div>
+        <div class="adv-card">
+          <div class="adv-icon">✨</div>
+          <h3>Без ремонта и пыли</h3>
+          <p>Установка в готовый проём — без штроб, пыли и строителей. Не трогаем пол и отделку: ваш ремонт остаётся в идеальном виде.</p>
+        </div>
+        <div class="adv-card">
+          <div class="adv-icon">🎨</div>
+          <h3>Под любой интерьер</h3>
+          <p>Цвет профиля по RAL, ткань на выбор: белая, светло-серая, темно-серая, песочная и голубая. Подберём под ваш дизайн.</p>
+        </div>
+        <div class="adv-card">
+          <div class="adv-icon">🌬️</div>
+          <h3>Воздух, свет и защита</h3>
+          <p>Полупрозрачные ткани пропускают свет. Есть варианты с блэкаутом и плотной москитной сеткой.</p>
+        </div>
+        <div class="adv-card">
+          <div class="adv-icon">🖐️</div>
+          <h3>Легко открывается</h3>
+          <p>Одной рукой. Плавный ход, можно остановить в любом положении. Удобно детям и пожилым.</p>
+        </div>
+        <div class="adv-card">
+          <div class="adv-icon">🚚</div>
+          <h3>Доставка по России</h3>
+          <p>Производство в г. Самара. Изготовление 5–7 дней. Отправляем в любой город транспортными компаниями (СДЭК, ПЭК, Деловые линии).</p>
+        </div>
+      </div>
+
+      <!-- Service highlight -->
+      <div class="service-highlight">
+        <div>
+          <h3>Замер и монтаж по Самаре</h3>
+          <p>Мы не просто продаём — помогаем сделать правильно. Приедем, замерим и при необходимости установим.</p>
+        </div>
+        <div class="service-items">
+          <div class="service-item">
+            <div class="icon">📏</div>
+            <div>
+              <strong>Замер — бесплатно</strong>
+              <span>По всей Самаре</span>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="icon">🔧</div>
+            <div>
+              <strong>Монтаж — платный</strong>
+              <span>Аккуратно и в удобное время</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features">
+    <div class="container">
+      <div class="features-grid">
+        <div>
+          <div class="section-header" style="text-align:left;margin:0 0 32px;">
+            <h2>Как устроена система</h2>
+            <p>Алюминиевый профиль + плиссированное полотно + натяжные нити</p>
+          </div>
+          <ul class="features-list">
+            <li>
+              <span class="check">✓</span>
+              <div>
+                <h4>Алюминиевый каркас</h4>
+                <p>Прочный профиль толщиной 25 мм. Цвета: белый, коричневый, серый или любой цвет под заказ по RAL.</p>
+              </div>
+            </li>
+            <li>
+              <span class="check">✓</span>
+              <div>
+                <h4>Ткань или сетка-гармошка</h4>
+                <p>Плиссированное полотно из полиэстера или москитной сетки. Складывается аккуратно, не мнётся, легко чистится.</p>
+              </div>
+            </li>
+            <li>
+              <span class="check">✓</span>
+              <div>
+                <h4>Натяжные нити</h4>
+                <p>Удерживают полотно вертикально. Ветроустойчивость, плавный ход, долгий срок службы.</p>
+              </div>
+            </li>
+            <li>
+              <span class="check">✓</span>
+              <div>
+                <h4>Любой размер</h4>
+                <p>От узких оконных и дверных проёмов до широких порталов до 5 м в ширину и 3 м в высоту.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="features-visual">
+          <p style="font-weight:600;margin-bottom:16px;color:var(--primary-dark);">Максимальные размеры</p>
+          <div class="size-badge">Ширина до 5000 мм</div>
+          <div class="size-badge">Высота до 3000 мм</div>
+          <p style="margin-top:24px;font-size:0.9rem;color:var(--text-muted);">
+            Одностворчатая — до ~220 см<br>
+            Двустворчатая — широкий проём
+          </p>
+          <p style="margin-top:18px;font-size:0.85rem;color:var(--terracotta);font-weight:600;">
+            В сложенном виде — 5–8 см у стены
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Applications -->
+  <section class="advantages" id="applications">
+    <div class="container">
+      <div class="section-header">
+        <h2>Где используют системы плиссе</h2>
+        <p>Универсальное решение для квартир, домов и офисов</p>
+      </div>
+      <div class="apps-grid">
+        <div class="app-card"><div class="emoji">🏢</div><h3>Квартира-студия</h3></div>
+        <div class="app-card"><div class="emoji">🍳</div><h3>Кухня-гостиная</h3></div>
+        <div class="app-card"><div class="emoji">🛏️</div><h3>Спальня / кабинет</h3></div>
+        <div class="app-card"><div class="emoji">👶</div><h3>Детская</h3></div>
+        <div class="app-card"><div class="emoji">🪟</div><h3>Окна и панорамы</h3></div>
+        <div class="app-card"><div class="emoji">🚪</div><h3>Двери и входные группы</h3></div>
+        <div class="app-card"><div class="emoji">🏡</div><h3>Терраса / беседка</h3></div>
+        <div class="app-card"><div class="emoji">💼</div><h3>Офис / переговорка</h3></div>
+        <div class="app-card"><div class="emoji">👔</div><h3>Гардеробная</h3></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <h2>Наши работы</h2>
+        <p>Реальные объекты — перегородки, шторы и москитные сетки плиссе</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item"><span>📷</span>Перегородка в студии</div>
+        <div class="gallery-item"><span>📷</span>Москитная сетка на террасе</div>
+        <div class="gallery-item"><span>📷</span>Штора на панорамном окне</div>
+        <div class="gallery-item"><span>📷</span>Зонирование кухни-гостиной</div>
+        <div class="gallery-item"><span>📷</span>Дверная сетка плиссе</div>
+        <div class="gallery-item"><span>📷</span>Перегородка в кабинете</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <h2>Как заказать</h2>
+        <p>От заявки до установки — просто и прозрачно</p>
+      </div>
+      <div class="process-steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Заявка</h3>
+          <p>Оставьте размеры или контакты — перезвоним за 10 минут</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>Расчёт</h3>
+          <p>Подберём ткань/сетку, цвет профиля и посчитаем точную стоимость</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>Производство</h3>
+          <p>Изготовим под ваш проём за 5–7 дней на собственном производстве</p>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <h3>Доставка</h3>
+          <p>Отправим по всей России. Инструкция по сборке в комплекте</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Calculator -->
+  <section class="calc-section" id="calc">
+    <div class="container">
+      <div class="calc-card">
+        <div id="form-content">
+          <h3>Рассчитать стоимость</h3>
+          <p>Укажите размеры проёма — пришлём расчёт и варианты тканей/сеток</p>
+          <form id="order-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="width">Ширина проёма, мм</label>
+                <input type="number" id="width" name="width" placeholder="например, 1200" min="400" max="5000">
+              </div>
+              <div class="form-group">
+                <label for="height">Высота проёма, мм</label>
+                <input type="number" id="height" name="height" placeholder="например, 2100" min="800" max="3000">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="type">Тип изделия</label>
+              <select id="type" name="type">
+                <option value="partition">Перегородка для зонирования</option>
+                <option value="door">Межкомнатная дверь-плиссе</option>
+                <option value="net">Москитная сетка плиссе</option>
+                <option value="curtain">Штора плиссе</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="name">Ваше имя</label>
+              <input type="text" id="name" name="name" placeholder="Как к вам обращаться" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Телефон или MAX</label>
+              <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+            </div>
+            <div class="form-group">
+              <label for="comment">Комментарий (необязательно)</label>
+              <textarea id="comment" name="comment" placeholder="Цвет, город доставки, нужен ли монтаж..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">Получить расчёт</button>
+            <p class="form-note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных</p>
+          </form>
+        </div>
+        <div class="form-success" id="form-success">
+          <div class="icon">✅</div>
+          <h3>Заявка отправлена!</h3>
+          <p>Мы свяжемся с вами в ближайшее время и пришлём расчёт.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacts -->
+  <section id="contacts">
+    <div class="container">
+      <div class="section-header">
+        <h2>Контакты</h2>
+        <p>Напишите или позвоните — ответим быстро</p>
+      </div>
+      <div class="contacts-grid">
+        <div class="contact-info">
+          <h3>Отдел продаж</h3>
+          <div class="contact-item">
+            <div class="icon">📞</div>
+            <div>
+              <strong>Телефон</strong>
+              <a href="tel:+79874547720">+7 (987) 454-77-20</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon">💬</div>
+            <div>
+              <strong>Max / Telegram</strong>
+              <a href="https://t.me/+79874547720" target="_blank" rel="noopener">+7 (987) 454-77-20</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon">✉️</div>
+            <div>
+              <strong>Почта</strong>
+              <a href="mailto:frame.gc@mail.ru">frame.gc@mail.ru</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon">📍</div>
+            <div>
+              <strong>Производство</strong>
+              <span>Самара</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon">🌐</div>
+            <div>
+              <strong>Сайт</strong>
+              <a href="https://frame.samara.ru" target="_blank" rel="noopener">frame.samara.ru</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-cta">
+          <h3>Нужна консультация?</h3>
+          <p>Укажите размеры проёма — мы рассчитаем стоимость за 1–2 минуты и подберём оптимальный вариант под ваши задачи: перегородки, шторы или москитные сетки плиссе. Если есть сложности с замером — вышлем подробную инструкцию.</p>
+          <a href="https://t.me/+79874547720" class="btn btn-whatsapp" target="_blank" rel="noopener">
+            Написать в Max / Telegram
+          </a>
+          <a href="#calc" class="btn btn-outline">Оставить заявку на сайте</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">FRAME</a>
+          <p>Производство раздвижных перегородок, штор и москитных сеток плиссе. Доставка по всей России.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Продукция</h4>
+          <a href="#products">Перегородки плиссе</a>
+          <a href="#products">Москитные сетки</a>
+          <a href="#products">Шторы плиссе</a>
+          <a href="#calc">Рассчитать</a>
+        </div>
+        <div class="footer-col">
+          <h4>Информация</h4>
+          <a href="#advantages">Преимущества</a>
+          <a href="#gallery">Галерея</a>
+          <a href="#contacts">Контакты</a>
+          <a href="https://frame.samara.ru" target="_blank" rel="noopener">Основной сайт</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025–2026 FRAME · Производство в г. Самара</span>
+        <span>Доставка по всей России</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('order-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('form-content').style.display = 'none';
+      document.getElementById('form-success').classList.add('show');
+    });
+    document.querySelector('.mobile-toggle').addEventListener('click', function() {
+      const nav = document.querySelector('nav');
+      if (nav.style.display === 'flex') {
+        nav.style.display = 'none';
+      } else {
+        nav.style.display = 'flex';
+        nav.style.flexDirection = 'column';
+        nav.style.position = 'absolute';
+        nav.style.top = '64px';
+        nav.style.left = '0';
+        nav.style.right = '0';
+        nav.style.background = 'var(--bg)';
+        nav.style.padding = '20px';
+        nav.style.borderBottom = '1px solid var(--border)';
+        nav.style.gap = '16px';
+      }
+    });
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth <= 900) {
+          document.querySelector('nav').style.display = 'none';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
