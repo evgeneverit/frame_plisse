@@ -4,29 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FRAME — перегородки, шторы и москитные сетки плиссе</title>
-  <meta name="description" content="Раздвижные перегородки, шторы и москитные сетки плиссе от производителя FRAME. Бесплатный замер по Самаре. Цена финальная, доставка по России.">
+  <meta name="description" content="Раздвижные перегородки, шторы и москитные сетки плиссе от производителя FRAME. Бесплатный замер по Самаре.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-  
+
+  <!-- Promo -->
+  <div class="promo">
+    <div class="container">
+      <strong>Бесплатный замер по Самаре</strong>
+      <span> · Монтаж возможен · Доставка по всей России</span>
+    </div>
+  </div>
 
   <!-- Header -->
   <header>
-    <div class="container header-inner">
+    <div class="container header">
       <a href="#" class="logo">FRAME</a>
       <nav>
         <a href="#products">Продукция</a>
         <a href="#advantages">Преимущества</a>
-        <a href="#features">О системе</a>
-        <a href="#gallery">Галерея</a>
         <a href="#calc">Рассчитать</a>
         <a href="#contacts">Контакты</a>
       </nav>
-      <a href="#calc" class="btn btn-primary">Рассчитать цену</a>
-      <button class="mobile-toggle" aria-label="Меню">☰</button>
+      <a href="#calc" class="btn btn-orange">Рассчитать цену</a>
+      <button class="menu-btn" aria-label="Меню">☰</button>
     </div>
   </header>
 
@@ -34,36 +40,34 @@
   <section class="hero">
     <div class="container hero-grid">
       <div>
-        <div class="hero-badge">Собственное производство г.Самара</div>
-        <h1>Перегородки, шторы и москитные сетки <br><em>плиссе</em></h1>
-        <p class="hero-lead">
-          Стильные системы плиссе с гарантией — цена финальная, без скрытых доплат. Изготовим под ваш проём, установим аккуратно, доставим по РФ.
+        <div class="badge">✦ Производство в г. Самара</div>
+        <h1>Перегородки, шторы и москитные сетки <em>плиссе</em></h1>
+        <p class="lead">
+          Стильные системы плиссе с гарантией — цена финальная, без скрытых доплат. Изготовим под ваш проём и доставим по РФ.
         </p>
-        <div class="hero-cta">
-          <a href="#calc" class="btn btn-primary btn-lg">Рассчитать стоимость</a>
-          <a href="https://wa.me/79874547720" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">WhatsApp</a>
+        <div class="hero-btns">
+          <a href="#calc" class="btn btn-orange btn-lg">Рассчитать стоимость</a>
+          <a href="https://www.instagram.com/frame_granitsa_comforta" class="btn btn-instagram btn-lg" target="_blank"><i class="bi bi-instagram"></i> Instagram</a>
         </div>
-        <div class="hero-stats">
-          <div class="stat">
-            <span class="stat-value">до 5 × 3 м</span>
-            <span class="stat-label">максимальный размер</span>
+        <div class="stats">
+          <div>
+            <strong>до 5×3 м</strong>
+            <span>максимальный размер</span>
           </div>
-          <div class="stat">
-            <span class="stat-value">5–7 дней</span>
-            <span class="stat-label">срок изготовления</span>
+          <div>
+            <strong>5–7 дней</strong>
+            <span>срок изготовления</span>
           </div>
-          <div class="stat">
-            <span class="stat-value">от 3 000 ₽</span>
-            <span class="stat-label">готовые модели</span>
+          <div>
+            <strong>от 3 000 ₽</strong>
+            <span>готовые модели</span>
           </div>
         </div>
       </div>
-      <div class="hero-visual">
-        <div class="hero-visual-inner">
-          <div class="hero-visual-icon">🏠</div>
-          <p style="font-weight:600;color:var(--primary-dark);margin-bottom:8px;">Системы плиссе</p>
-          <p style="color:var(--text-muted);">В открытом виде — стопка 5–8 см.<br>Полностью освобождает проём.</p>
-        </div>
+      <div class="hero-card">
+        <div class="hero-icon">🏠</div>
+        <strong>Системы плиссе</strong>
+        <p>В открытом виде — стопка всего 5–8 см.<br>Полностью освобождает проём.</p>
       </div>
     </div>
   </section>
@@ -71,78 +75,77 @@
   <!-- Products -->
   <section id="products">
     <div class="container">
-      <div class="section-header">
+      <div class="section-title">
         <h2>Три решения на одной технологии</h2>
-        <p>Одна система — три задачи. Выбирайте то, что нужно именно вам</p>
+        <p>Одна система — три задачи</p>
       </div>
-      <div class="products-grid">
-        <div class="product-card">
+      <div class="cards">
+        <div class="card">
           <div class="emoji">🚪</div>
           <h3>Перегородки плиссе</h3>
-          <p>Идеально подходят для зонирования комнат, организации пространства в любых помещениях и обустройства гардеробных — они гибко адаптируются под разные задачи и сохраняют простор.</p>
-          <a href="#calc" class="btn btn-primary" style="width:100%;">Рассчитать</a>
+          <p>Для зонирования комнат, гардеробных и любых помещений. Гибко адаптируются и сохраняют простор.</p>
+          <a href="#calc" class="btn btn-orange">Рассчитать</a>
         </div>
-        <div class="product-card">
+        <div class="card">
           <div class="emoji">🪟</div>
           <h3>Шторы плиссе</h3>
           <p>Для окон и панорамных проёмов. Полупрозрачные ткани и блэкаут. Регулируют свет и сохраняют приватность.</p>
-          <a href="#calc" class="btn btn-primary" style="width:100%;">Рассчитать</a>
+          <a href="#calc" class="btn btn-orange">Рассчитать</a>
         </div>
-        <div class="product-card">
+        <div class="card">
           <div class="emoji">🦟</div>
           <h3>Москитные сетки плиссе</h3>
-          <p>Компактная защита от насекомых для окон, дверей, террас и беседок. Полотно складывается в тонкую стопку — не мешает проходу и почти не занимает места.</p>
-          <a href="#calc" class="btn btn-primary" style="width:100%;">Рассчитать</a>
+          <p>Защита от насекомых для окон, дверей и террас. Складывается в тонкую стопку и почти не занимает места.</p>
+          <a href="#calc" class="btn btn-orange">Рассчитать</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Advantages -->
-  <section class="advantages" id="advantages">
+  <section class="bg-soft" id="advantages">
     <div class="container">
-      <div class="section-header">
-        <h2>Почему плиссе, а не обычные решения</h2>
+      <div class="section-title">
+        <h2>Почему плиссе</h2>
         <p>Современная система, которая экономит место и выглядит стильно</p>
       </div>
-      <div class="adv-grid">
-        <div class="adv-card">
-          <div class="adv-icon">📦</div>
+      <div class="cards">
+        <div class="card">
+          <div class="icon">📦</div>
           <h3>Почти не занимает места</h3>
-          <p>Компактность до миллиметра: в сложенном виде полотно — всего 5–8 см. Тонкий профиль 25 мм, не бросается в глаза. Идеально для квартир, домов и офиса — ничего не мешает, всё на своём месте.</p>
+          <p>В сложенном виде полотно — всего 5–8 см. Тонкий профиль 25 мм.</p>
         </div>
-        <div class="adv-card">
-          <div class="adv-icon">✨</div>
+        <div class="card">
+          <div class="icon">✨</div>
           <h3>Без ремонта и пыли</h3>
-          <p>Установка в готовый проём — без штроб, пыли и строителей. Не трогаем пол и отделку: ваш ремонт остаётся в идеальном виде.</p>
+          <p>Установка в готовый проём без штроб и строителей.</p>
         </div>
-        <div class="adv-card">
-          <div class="adv-icon">🎨</div>
+        <div class="card">
+          <div class="icon">🎨</div>
           <h3>Под любой интерьер</h3>
-          <p>Цвет профиля по RAL, ткань на выбор: белая, светло-серая, темно-серая, песочная и голубая. Подберём под ваш дизайн.</p>
+          <p>Цвет профиля по RAL и несколько вариантов тканей.</p>
         </div>
-        <div class="adv-card">
-          <div class="adv-icon">🌬️</div>
-          <h3>Воздух, свет и защита</h3>
-          <p>Полупрозрачные ткани пропускают свет. Есть варианты с блэкаутом и плотной москитной сеткой.</p>
-        </div>
-        <div class="adv-card">
-          <div class="adv-icon">🖐️</div>
+        <div class="card">
+          <div class="icon">🖐️</div>
           <h3>Легко открывается</h3>
-          <p>Одной рукой. Плавный ход, можно остановить в любом положении. Удобно детям и пожилым.</p>
+          <p>Одной рукой. Плавный ход, можно остановить в любом положении.</p>
         </div>
-        <div class="adv-card">
-          <div class="adv-icon">🚚</div>
+        <div class="card">
+          <div class="icon">🌬️</div>
+          <h3>Воздух, свет и защита</h3>
+          <p>Полупрозрачные ткани, блэкаут и плотная москитная сетка.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🚚</div>
           <h3>Доставка по России</h3>
-          <p>Производство в г. Самара. Изготовление 5–7 дней. Отправляем в любой город транспортными компаниями (СДЭК, ПЭК, Деловые линии).</p>
+          <p>Производство в Самаре. Изготовление 5–7 дней.</p>
         </div>
       </div>
 
-      <!-- Service highlight -->
-      <div class="service-highlight">
+      <div class="service">
         <div>
           <h3>Замер и монтаж по Самаре</h3>
-          <p>Мы не просто продаём — помогаем сделать правильно. Приедем, замерим и при необходимости установим.</p>
+          <p>Приедем, замерим и при необходимости установим.</p>
         </div>
         <div class="service-items">
           <div class="service-item">
@@ -156,278 +159,124 @@
             <div class="icon">🔧</div>
             <div>
               <strong>Монтаж — платный</strong>
-              <span>Аккуратно и в удобное время</span>
+              <span>В удобное время</span>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Features -->
-  <section id="features">
-    <div class="container">
-      <div class="features-grid">
-        <div>
-          <div class="section-header" style="text-align:left;margin:0 0 32px;">
-            <h2>Как устроена система</h2>
-            <p>Алюминиевый профиль + плиссированное полотно + натяжные нити</p>
-          </div>
-          <ul class="features-list">
-            <li>
-              <span class="check">✓</span>
-              <div>
-                <h4>Алюминиевый каркас</h4>
-                <p>Прочный профиль толщиной 25 мм. Цвета: белый, коричневый, серый или любой цвет под заказ по RAL.</p>
-              </div>
-            </li>
-            <li>
-              <span class="check">✓</span>
-              <div>
-                <h4>Ткань или сетка-гармошка</h4>
-                <p>Плиссированное полотно из полиэстера или москитной сетки. Складывается аккуратно, не мнётся, легко чистится.</p>
-              </div>
-            </li>
-            <li>
-              <span class="check">✓</span>
-              <div>
-                <h4>Натяжные нити</h4>
-                <p>Удерживают полотно вертикально. Ветроустойчивость, плавный ход, долгий срок службы.</p>
-              </div>
-            </li>
-            <li>
-              <span class="check">✓</span>
-              <div>
-                <h4>Любой размер</h4>
-                <p>От узких оконных и дверных проёмов до широких порталов до 5 м в ширину и 3 м в высоту.</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="features-visual">
-          <p style="font-weight:600;margin-bottom:16px;color:var(--primary-dark);">Максимальные размеры</p>
-          <div class="size-badge">Ширина до 5000 мм</div>
-          <div class="size-badge">Высота до 3000 мм</div>
-          <p style="margin-top:24px;font-size:0.9rem;color:var(--text-muted);">
-            Одностворчатая — до ~220 см<br>
-            Двустворчатая — широкий проём
-          </p>
-          <p style="margin-top:18px;font-size:0.85rem;color:var(--terracotta);font-weight:600;">
-            В сложенном виде — 5–8 см у стены
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Applications -->
-  <section class="advantages" id="applications">
-    <div class="container">
-      <div class="section-header">
-        <h2>Где используют системы плиссе</h2>
-        <p>Универсальное решение для квартир, домов и офисов</p>
-      </div>
-      <div class="apps-grid">
-        <div class="app-card"><div class="emoji">🏢</div><h3>Квартира-студия</h3></div>
-        <div class="app-card"><div class="emoji">🍳</div><h3>Кухня-гостиная</h3></div>
-        <div class="app-card"><div class="emoji">🛏️</div><h3>Спальня / кабинет</h3></div>
-        <div class="app-card"><div class="emoji">👶</div><h3>Детская</h3></div>
-        <div class="app-card"><div class="emoji">🪟</div><h3>Окна и панорамы</h3></div>
-        <div class="app-card"><div class="emoji">🚪</div><h3>Двери и входные группы</h3></div>
-        <div class="app-card"><div class="emoji">🏡</div><h3>Терраса / беседка</h3></div>
-        <div class="app-card"><div class="emoji">💼</div><h3>Офис / переговорка</h3></div>
-        <div class="app-card"><div class="emoji">👔</div><h3>Гардеробная</h3></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Gallery -->
-  <section id="gallery">
-    <div class="container">
-      <div class="section-header">
-        <h2>Наши работы</h2>
-        <p>Реальные объекты — перегородки, шторы и москитные сетки плиссе</p>
-      </div>
-      <div class="gallery-grid">
-        <div class="gallery-item"><span>📷</span>Перегородка в студии</div>
-        <div class="gallery-item"><span>📷</span>Москитная сетка на террасе</div>
-        <div class="gallery-item"><span>📷</span>Штора на панорамном окне</div>
-        <div class="gallery-item"><span>📷</span>Зонирование кухни-гостиной</div>
-        <div class="gallery-item"><span>📷</span>Дверная сетка плиссе</div>
-        <div class="gallery-item"><span>📷</span>Перегородка в кабинете</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Process -->
-  <section>
-    <div class="container">
-      <div class="section-header">
-        <h2>Как заказать</h2>
-        <p>От заявки до установки — просто и прозрачно</p>
-      </div>
-      <div class="process-steps">
-        <div class="step">
-          <div class="step-num">1</div>
-          <h3>Заявка</h3>
-          <p>Оставьте размеры или контакты — перезвоним за 10 минут</p>
-        </div>
-        <div class="step">
-          <div class="step-num">2</div>
-          <h3>Расчёт</h3>
-          <p>Подберём ткань/сетку, цвет профиля и посчитаем точную стоимость</p>
-        </div>
-        <div class="step">
-          <div class="step-num">3</div>
-          <h3>Производство</h3>
-          <p>Изготовим под ваш проём за 5–7 дней на собственном производстве</p>
-        </div>
-        <div class="step">
-          <div class="step-num">4</div>
-          <h3>Доставка</h3>
-          <p>Отправим по всей России. Инструкция по сборке в комплекте</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Calculator -->
-  <section class="calc-section" id="calc">
+  <section id="calc">
     <div class="container">
-      <div class="calc-card">
+      <div class="form-card">
         <div id="form-content">
           <h3>Рассчитать стоимость</h3>
-          <p>Укажите размеры проёма — пришлём расчёт и варианты тканей/сеток</p>
+          <p>Укажите размеры проёма — пришлём расчёт</p>
           <form id="order-form">
             <div class="form-row">
-              <div class="form-group">
-                <label for="width">Ширина проёма, мм</label>
-                <input type="number" id="width" name="width" placeholder="например, 1200" min="400" max="5000">
+              <div class="field">
+                <label>Ширина, мм</label>
+                <input type="number" name="width" placeholder="1200" min="400" max="5000">
               </div>
-              <div class="form-group">
-                <label for="height">Высота проёма, мм</label>
-                <input type="number" id="height" name="height" placeholder="например, 2100" min="800" max="3000">
+              <div class="field">
+                <label>Высота, мм</label>
+                <input type="number" name="height" placeholder="2100" min="800" max="3000">
               </div>
             </div>
-            <div class="form-group">
-              <label for="type">Тип изделия</label>
-              <select id="type" name="type">
-                <option value="partition">Перегородка для зонирования</option>
-                <option value="door">Межкомнатная дверь-плиссе</option>
-                <option value="net">Москитная сетка плиссе</option>
+            <div class="field">
+              <label>Тип изделия</label>
+              <select name="type">
+                <option value="partition">Перегородка</option>
+                <option value="door">Дверь-плиссе</option>
+                <option value="net">Москитная сетка</option>
                 <option value="curtain">Штора плиссе</option>
               </select>
             </div>
-            <div class="form-group">
-              <label for="name">Ваше имя</label>
-              <input type="text" id="name" name="name" placeholder="Как к вам обращаться" required>
+            <div class="field">
+              <label>Ваше имя</label>
+              <input type="text" name="name" placeholder="Как к вам обращаться" required>
             </div>
-            <div class="form-group">
-              <label for="phone">Телефон или MAX</label>
-              <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+            <div class="field">
+              <label>Телефон</label>
+              <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
             </div>
-            <div class="form-group">
-              <label for="comment">Комментарий (необязательно)</label>
-              <textarea id="comment" name="comment" placeholder="Цвет, город доставки, нужен ли монтаж..."></textarea>
+            <div class="field">
+              <label>Комментарий</label>
+              <textarea name="comment" placeholder="Цвет, город, нужен ли монтаж..."></textarea>
             </div>
-            <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">Получить расчёт</button>
-            <p class="form-note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных</p>
+            <button type="submit" class="btn btn-orange btn-lg" style="width:100%">Получить расчёт</button>
+            <p class="note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных</p>
           </form>
         </div>
-        <div class="form-success" id="form-success">
-          <div class="icon">✅</div>
+        <div class="success" id="form-success">
+          <div class="big">✅</div>
           <h3>Заявка отправлена!</h3>
-          <p>Мы свяжемся с вами в ближайшее время и пришлём расчёт.</p>
+          <p>Мы свяжемся с вами в ближайшее время.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Contacts -->
-  <section id="contacts">
-    <div class="container">
-      <div class="section-header">
-        <h2>Контакты</h2>
-        <p>Напишите или позвоните — ответим быстро</p>
+  <section class="bg-soft" id="contacts">
+    <div class="container contacts">
+      <div>
+        <h3>Контакты</h3>
+        <div class="contact">
+          <div class="icon">📞</div>
+          <div>
+            <strong>Телефон</strong>
+            <a href="tel:+79874547720">+7 (987) 454-77-20</a>
+          </div>
+        </div>
+        <div class="contact">
+          <div class="icon">💬</div>
+          <div>
+            <strong>Max / Telegram</strong>
+            <a href="https://t.me/+79874547720" target="_blank">+7 (987) 454-77-20</a>
+          </div>
+        </div>
+        <div class="contact">
+          <div class="icon">✉️</div>
+          <div>
+            <strong>Почта</strong>
+            <a href="mailto:frame.gc@mail.ru">frame.gc@mail.ru</a>
+          </div>
+        </div>
+        <div class="contact">
+          <div class="icon">📍</div>
+          <div>
+            <strong>Производство</strong>
+            <span>Самара</span>
+          </div>
+        </div>
       </div>
-      <div class="contacts-grid">
-        <div class="contact-info">
-          <h3>Отдел продаж</h3>
-          <div class="contact-item">
-            <div class="icon">📞</div>
-            <div>
-              <strong>Телефон</strong>
-              <a href="tel:+79874547720">+7 (987) 454-77-20</a>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="icon">💬</div>
-            <div>
-              <strong>Max / Telegram</strong>
-              <a href="https://t.me/+79874547720" target="_blank" rel="noopener">+7 (987) 454-77-20</a>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="icon">✉️</div>
-            <div>
-              <strong>Почта</strong>
-              <a href="mailto:frame.gc@mail.ru">frame.gc@mail.ru</a>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="icon">📍</div>
-            <div>
-              <strong>Производство</strong>
-              <span>Самара</span>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="icon">🌐</div>
-            <div>
-              <strong>Сайт</strong>
-              <a href="https://frame.samara.ru" target="_blank" rel="noopener">frame.samara.ru</a>
-            </div>
-          </div>
-        </div>
-        <div class="contact-cta">
-          <h3>Нужна консультация?</h3>
-          <p>Укажите размеры проёма — мы рассчитаем стоимость за 1–2 минуты и подберём оптимальный вариант под ваши задачи: перегородки, шторы или москитные сетки плиссе. Если есть сложности с замером — вышлем подробную инструкцию.</p>
-          <a href="https://t.me/+79874547720" class="btn btn-whatsapp" target="_blank" rel="noopener">
-            Написать в Max / Telegram
-          </a>
-          <a href="#calc" class="btn btn-outline">Оставить заявку на сайте</a>
-        </div>
+      <div class="cta-card">
+        <h3>Нужна консультация?</h3>
+        <p>Напишите размеры проёма — рассчитаем стоимость за пару минут.</p>
+        <a href="https://t.me/+79874547720" class="btn btn-green" target="_blank">Написать в Max / Telegram</a>
+        <a href="#calc" class="btn btn-outline">Оставить заявку</a>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="#" class="logo">FRAME</a>
-          <p>Производство раздвижных перегородок, штор и москитных сеток плиссе. Доставка по всей России.</p>
-        </div>
-        <div class="footer-col">
-          <h4>Продукция</h4>
-          <a href="#products">Перегородки плиссе</a>
-          <a href="#products">Москитные сетки</a>
-          <a href="#products">Шторы плиссе</a>
-          <a href="#calc">Рассчитать</a>
-        </div>
-        <div class="footer-col">
-          <h4>Информация</h4>
-          <a href="#advantages">Преимущества</a>
-          <a href="#gallery">Галерея</a>
-          <a href="#contacts">Контакты</a>
-          <a href="https://frame.samara.ru" target="_blank" rel="noopener">Основной сайт</a>
-        </div>
+    <div class="container footer">
+      <div>
+        <a href="#" class="logo">FRAME</a>
+        <p>Производство систем плиссе. Доставка по всей России.</p>
       </div>
-      <div class="footer-bottom">
-        <span>© 2025–2026 FRAME · Производство в г. Самара</span>
-        <span>Доставка по всей России</span>
+      <div>
+        <a href="#products">Продукция</a>
+        <a href="#advantages">Преимущества</a>
+        <a href="#contacts">Контакты</a>
       </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2025–2026 FRAME · Самара</span>
     </div>
   </footer>
 
