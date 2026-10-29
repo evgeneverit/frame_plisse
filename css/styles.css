@@ -84,8 +84,21 @@ nav a:hover { color: var(--teal); }
   transition: 0.2s;
   font-family: inherit;
 }
-.btn-orange { background: var(--cta); color: white; }
-.btn-orange:hover { background: var(--cta-hover); transform: translateY(-1px); }
+.btn-orange { background: linear-gradient(45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%);
+  color: #fff;
+ }
+.btn-orange:hover { background: linear-gradient(45deg,
+    #e0832a 0%,
+    #d55a30 25%,
+    #c81f3a 50%,
+    #b81e5c 75%,
+    #a8157a 100%);
+   }
 .btn-green { background: #25D366; color: white; }
 .btn-green:hover { background: #1da851; }
 .btn-outline {
@@ -119,7 +132,7 @@ nav a:hover { color: var(--teal); }
 /* Hero */
 .hero {
   padding: 60px 0 50px;
-  background: linear-gradient(180deg, #F7F0E8, var(--peach));
+  background: linear-gradient(180deg, var(--peach), #F7F0E8);
 }
 .hero-grid {
   display: grid;
