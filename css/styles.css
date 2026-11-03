@@ -5,6 +5,7 @@
   --g-teal:linear-gradient(135deg,#2c4a43 0%,#43695f 45%,#6a8f76 100%);
   --g-sand:linear-gradient(135deg,#d6bd93 0%,#e9d9b8 100%);
   --g-orange:linear-gradient(135deg,#b85a0e 0%,#d97a22 55%,#eba15a 100%);
+  --g-btn:linear-gradient(135deg,#d9731c 0%,#ec9a4c 100%);
   --display:'Unbounded','Onest',system-ui,sans-serif;
   --body:'Onest',system-ui,sans-serif;
 }
@@ -157,3 +158,10 @@ dialog img{display:block;max-width:92vw;max-height:90vh;margin:auto;border-radiu
 .lb-p{left:20px;top:50%;transform:translateY(-50%)}
 .lb-n{right:20px;top:50%;transform:translateY(-50%)}
 @media(max-width:620px){.lb-p,.lb-n{top:auto;bottom:20px;transform:none}}
+
+.vid{position:relative;break-inside:avoid;margin-bottom:18px}
+.vid img{margin-bottom:0}
+.play{position:absolute;left:50%;top:50%;width:72px;height:72px;margin:-36px 0 0 -36px;border-radius:50%;background:var(--g-orange);box-shadow:0 8px 24px rgba(0,0,0,.35);pointer-events:none}
+.play::after{content:"";position:absolute;left:29px;top:22px;border-style:solid;border-width:14px 0 14px 22px;border-color:transparent transparent transparent #fff}
+dialog video{display:block;max-width:92vw;max-height:90vh;border-radius:16px}
+dialog img[hidden],dialog video[hidden]{display:none}
