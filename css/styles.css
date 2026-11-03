@@ -146,8 +146,14 @@ footer p{margin-top:8px;font-size:15px;max-width:320px;opacity:.8}
 .seg button[aria-pressed=true]{background:var(--g-orange);color:#fff}
 .masonry{columns:3;column-gap:18px}
 .masonry img{display:block;width:100%;height:auto;border-radius:22px;margin-bottom:18px;cursor:zoom-in;break-inside:avoid}
-dialog{border:0;background:transparent;padding:0;max-width:min(92vw,900px);overflow:visible}
+dialog{border:0;background:transparent;padding:0;margin:auto;max-width:92vw;max-height:92vh;overflow:visible}
 dialog::backdrop{background:rgba(22,36,31,.9)}
-dialog img{display:block;max-width:100%;max-height:90vh;margin:auto;border-radius:16px;cursor:zoom-out}
+dialog img{display:block;max-width:92vw;max-height:90vh;margin:auto;border-radius:16px;cursor:zoom-out}
 @media(max-width:960px){.toggle{grid-template-columns:1fr;gap:32px;margin-bottom:56px}.tg{max-width:400px}.masonry{columns:2}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.tg img{transition:none}}
+.lb-btn{position:fixed;width:48px;height:48px;border:0;border-radius:50%;background:rgba(245,240,228,.92);color:var(--ink);font-size:28px;line-height:1;cursor:pointer}
+.lb-btn:hover{background:#fff}
+.lb-x{top:20px;right:20px}
+.lb-p{left:20px;top:50%;transform:translateY(-50%)}
+.lb-n{right:20px;top:50%;transform:translateY(-50%)}
+@media(max-width:620px){.lb-p,.lb-n{top:auto;bottom:20px;transform:none}}
