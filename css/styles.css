@@ -147,7 +147,7 @@ footer p{margin-top:8px;font-size:15px;max-width:320px;opacity:.8}
 .masonry{columns:3;column-gap:18px}
 .masonry img{display:block;width:100%;height:auto;border-radius:22px;margin-bottom:18px;cursor:zoom-in;break-inside:avoid}
 dialog{border:0;background:transparent;padding:0;margin:auto;max-width:92vw;max-height:92vh;overflow:visible}
-dialog::backdrop{background:rgba(22,36,31,.9)}
+dialog::backdrop{background:rgba(16, 20, 19, 0.9)}
 dialog img{display:block;max-width:92vw;max-height:90vh;margin:auto;border-radius:16px;cursor:zoom-out}
 @media(max-width:960px){.toggle{grid-template-columns:1fr;gap:32px;margin-bottom:56px}.tg{max-width:400px}.masonry{columns:2}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.tg img{transition:none}}
